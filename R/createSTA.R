@@ -357,7 +357,8 @@ plot.STA <- function(x,
     if (plotType == "spatial") {
       mergeCols <- c("colCoord", "rowCoord")
     } else {
-      mergeCols <- NULL
+      mergeCols <- c("colCoord", "rowCoord")
+      #mergeCols <- NULL
     }
     if (useCheckId) {
       mergeCols <- c(mergeCols, "checkId")
